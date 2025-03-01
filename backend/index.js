@@ -28,7 +28,7 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// ✅ This must be present
+
 app.use("/api/products", productRoutes);
 
 app.get("/", (req, res) => {
